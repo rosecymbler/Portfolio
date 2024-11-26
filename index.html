@@ -8,173 +8,156 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="glass-nav">
         <div class="nav-content">
             <div class="logo">RC</div>
-            <ul class="nav-links">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="menu-items">
+                <a href="#home" class="menu-item">Home</a>
+                <a href="#experience" class="menu-item">Experience</a>
+                <a href="#skills" class="menu-item">Skills</a>
+                <a href="#education" class="menu-item">Education</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-bg"></div>
         <div class="hero-content">
-            <h1>Rose Cymbler</h1>
-            <p class="subtitle">Engineering Student & Data Enthusiast</p>
-            <div class="social-links">
-                <a href="mailto:rose.cymbler@icloud.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/rose-cymbler-08a282294"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/rosecymbler"><i class="fab fa-github"></i></a>
+            <div class="name-title">
+                <h1>Rose Cymbler</h1>
+                <p class="gradient-text">Engineering Student & Data Enthusiast</p>
+            </div>
+            <div class="hero-links">
+                <a href="mailto:rose.cymbler@icloud.com" class="glass-button">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://linkedin.com/in/rose-cymbler-08a282294" class="glass-button">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/rosecymbler" class="glass-button">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>Éducation</h2>
-        <div class="education-cards">
-            <div class="card">
-                <div class="card-content">
-                    <h3>Ecole Nationale Supérieure des Mines de Saint-Étienne</h3>
-                    <p class="period">2023 - 2026</p>
-                    <p class="description">Engineering Master Degree</p>
-                    <div class="badge">Ranked 3rd - 3.94 GPA</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h3>Lycée Henri IV</h3>
-                    <p class="period">2020 - 2023</p>
-                    <p class="description">Preparatory Class MPSI/MP</p>
-                    <div class="badge">Top 3 Classes Préparatoires</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
     <section id="experience" class="experience">
-        <h2>Expérience</h2>
+        <h2 class="section-title">Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>BayBridge Digital</h3>
-                    <p class="period">Janvier 2024</p>
-                    <p class="role">Data Strategy & Analytics Intern</p>
-                    <ul>
-                        <li>Organisation de sessions "Lunch & Learn" sur la Data Cloud</li>
-                        <li>Développement d'offres commerciales personnalisées</li>
-                        <li>Collaboration avec les équipes techniques et marketing</li>
-                    </ul>
+                <div class="glass-card">
+                    <div class="timeline-content">
+                        <h3>BayBridge Digital</h3>
+                        <span class="date">January 2024</span>
+                        <p class="role">Data Strategy & Analytics Intern</p>
+                        <ul>
+                            <li>Led "Lunch & Learn" sessions on Data Cloud technology</li>
+                            <li>Developed tailored commercial solutions</li>
+                            <li>Managed certification database for team projects</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Moadon Association</h3>
-                    <p class="period">Été 2024</p>
-                    <p class="role">Summer Camp Management</p>
-                    <ul>
-                        <li>Gestion des opérations pour 200+ participants</li>
-                        <li>Réduction des coûts opérationnels de 10%</li>
-                        <li>Management d'une équipe technique de 15 personnes</li>
-                    </ul>
+                <div class="glass-card">
+                    <div class="timeline-content">
+                        <h3>Moadon Association</h3>
+                        <span class="date">Summer 2024</span>
+                        <p class="role">Summer Camp Management</p>
+                        <ul>
+                            <li>Managed operations for 200+ participants</li>
+                            <li>Reduced operational costs by 10%</li>
+                            <li>Led a technical team of 15 people</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
-        <h2>Compétences</h2>
-        <div class="skills-container">
-            <div class="skills-category">
-                <h3>Compétences Techniques</h3>
-                <div class="skill-bars">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Python</span>
-                            <span>Advanced</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>SQL</span>
-                            <span>Advanced</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>C/C++</span>
-                            <span>Advanced</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 85%"></div>
-                        </div>
-                    </div>
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="glass-card skill-card">
+                <div class="skill-header">
+                    <h3>Python</h3>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress python"></div>
                 </div>
             </div>
-            <div class="skills-category">
-                <h3>Langues</h3>
-                <div class="language-grid">
-                    <div class="language-item">
-                        <i class="fas fa-globe"></i>
-                        <h4>Français</h4>
-                        <p>Natif</p>
-                    </div>
-                    <div class="language-item">
-                        <i class="fas fa-globe"></i>
-                        <h4>Anglais</h4>
-                        <p>Fluent</p>
-                    </div>
-                    <div class="language-item">
-                        <i class="fas fa-globe"></i>
-                        <h4>Russe</h4>
-                        <p>Basic</p>
-                    </div>
-                    <div class="language-item">
-                        <i class="fas fa-globe"></i>
-                        <h4>Espagnol</h4>
-                        <p>Basic</p>
-                    </div>
+            <div class="glass-card skill-card">
+                <div class="skill-header">
+                    <h3>SQL</h3>
+                    <span class="skill-level">Advanced</span>
                 </div>
+                <div class="progress-bar">
+                    <div class="progress sql"></div>
+                </div>
+            </div>
+            <div class="glass-card skill-card">
+                <div class="skill-header">
+                    <h3>C/C++</h3>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress cpp"></div>
+                </div>
+            </div>
+            <div class="glass-card skill-card">
+                <div class="skill-header">
+                    <h3>SystemVerilog</h3>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress verilog"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="languages-grid">
+            <div class="glass-card language-card">
+                <i class="fas fa-globe"></i>
+                <h3>French</h3>
+                <p>Native</p>
+            </div>
+            <div class="glass-card language-card">
+                <i class="fas fa-globe"></i>
+                <h3>English</h3>
+                <p>Fluent</p>
+            </div>
+            <div class="glass-card language-card">
+                <i class="fas fa-globe"></i>
+                <h3>Russian</h3>
+                <p>Basic</p>
+            </div>
+            <div class="glass-card language-card">
+                <i class="fas fa-globe"></i>
+                <h3>Spanish</h3>
+                <p>Basic</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <a href="mailto:rose.cymbler@icloud.com" class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>rose.cymbler@icloud.com</span>
-                </a>
-                <a href="https://linkedin.com/in/rose-cymbler-08a282294" class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/rosecymbler" class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
+    <section id="education" class="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+            <div class="glass-card education-card">
+                <h3>Ecole Nationale Supérieure des Mines de Saint-Étienne</h3>
+                <span class="date">2023 - 2026</span>
+                <p class="degree">Engineering Master Degree</p>
+                <div class="achievement">
+                    <span class="badge">Ranked 3rd - 3.94 GPA</span>
+                </div>
+            </div>
+            <div class="glass-card education-card">
+                <h3>Lycée Henri IV</h3>
+                <span class="date">2020 - 2023</span>
+                <p class="degree">Preparatory Class MPSI/MP</p>
+                <div class="achievement">
+                    <span class="badge">Top 3 Preparatory Classes</span>
+                </div>
             </div>
         </div>
     </section>
