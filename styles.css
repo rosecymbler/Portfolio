@@ -222,10 +222,12 @@ section {
     transition: width 1.5s ease;
 }
 
-.python { width: 95%; background: linear-gradient(to right, var(--primary), var(--secondary)); }
+.python { width: 90%; background: linear-gradient(to right, var(--primary), var(--secondary)); }
 .sql { width: 90%; background: linear-gradient(to right, #7c3aed, #a855f7); }
-.cpp { width: 85%; background: linear-gradient(to right, #2563eb, #3b82f6); }
+.cpp { width: 90%; background: linear-gradient(to right, #2563eb, #3b82f6); }
 .verilog { width: 80%; background: linear-gradient(to right, #6366f1, #818cf8); }
+.matlab { width: 50%; background: linear-gradient(to right, #6366f1, #818cf8); }
+.stm { width: 50%; background: linear-gradient(to right, #6366f1, #818cf8); }
 
 /* Languages Grid */
 .languages-grid {
