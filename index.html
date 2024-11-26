@@ -5,29 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rose Cymbler - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </head>
 <body>
-    <nav class="glass-nav">
+    <!-- Navigation Flottante -->
+    <nav class="floating-nav">
         <div class="nav-content">
-            <div class="logo">RC</div>
-            <div class="menu-items">
-                <a href="#home" class="menu-item">Home</a>
-                <a href="#experience" class="menu-item">Experience</a>
-                <a href="#skills" class="menu-item">Skills</a>
-                <a href="#education" class="menu-item">Education</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-bg"></div>
+    <!-- Menu Mobile -->
+    <div class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Section Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-gradient"></div>
         <div class="hero-content">
-            <div class="name-title">
-                <h1>Rose Cymbler</h1>
-                <p class="gradient-text">Engineering Student & Data Enthusiast</p>
-            </div>
-            <div class="hero-links">
+            <h1 class="gradient-text">Rose Cymbler</h1>
+            <p class="subtitle">Engineering Student & Data Enthusiast</p>
+            <div class="social-links">
                 <a href="mailto:rose.cymbler@icloud.com" class="glass-button">
                     <i class="fas fa-envelope"></i>
                 </a>
@@ -41,47 +45,47 @@
         </div>
     </section>
 
+    <!-- Section Experience -->
     <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title gradient-text">Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
                 <div class="glass-card">
-                    <div class="timeline-content">
-                        <h3>BayBridge Digital</h3>
-                        <span class="date">January 2024</span>
-                        <p class="role">Data Strategy & Analytics Intern</p>
-                        <ul>
-                            <li>Led "Lunch & Learn" sessions on Data Cloud technology</li>
-                            <li>Developed tailored commercial solutions</li>
-                            <li>Managed certification database for team projects</li>
-                        </ul>
-                    </div>
+                    <h3>Data Strategy & Analytics Intern</h3>
+                    <p class="company">BayBridge Digital</p>
+                    <p class="period">January 2024</p>
+                    <p class="description">Led Data Cloud technology initiatives and developed tailored commercial solutions.</p>
+                    <ul class="achievements">
+                        <li>Organized "Lunch & Learn" sessions</li>
+                        <li>Developed tailored commercial solutions</li>
+                        <li>Created certification database</li>
+                    </ul>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="glass-card">
-                    <div class="timeline-content">
-                        <h3>Moadon Association</h3>
-                        <span class="date">Summer 2024</span>
-                        <p class="role">Summer Camp Management</p>
-                        <ul>
-                            <li>Managed operations for 200+ participants</li>
-                            <li>Reduced operational costs by 10%</li>
-                            <li>Led a technical team of 15 people</li>
-                        </ul>
-                    </div>
+                    <h3>Summer Camp Management</h3>
+                    <p class="company">Moadon Association</p>
+                    <p class="period">Summer 2024</p>
+                    <p class="description">Managed operations for 200+ participants, reducing costs by 10%.</p>
+                    <ul class="achievements">
+                        <li>Led team of 15 people</li>
+                        <li>Optimized operational costs</li>
+                        <li>Managed daily logistics</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Section Skills -->
     <section id="skills" class="skills">
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title gradient-text">Skills</h2>
         <div class="skills-grid">
             <div class="glass-card skill-card">
                 <div class="skill-header">
                     <h3>Python</h3>
-                    <span class="skill-level">Advanced</span>
+                    <span class="level">Advanced</span>
                 </div>
                 <div class="progress-bar">
                     <div class="progress python"></div>
@@ -90,7 +94,7 @@
             <div class="glass-card skill-card">
                 <div class="skill-header">
                     <h3>SQL</h3>
-                    <span class="skill-level">Advanced</span>
+                    <span class="level">Advanced</span>
                 </div>
                 <div class="progress-bar">
                     <div class="progress sql"></div>
@@ -99,7 +103,7 @@
             <div class="glass-card skill-card">
                 <div class="skill-header">
                     <h3>C/C++</h3>
-                    <span class="skill-level">Advanced</span>
+                    <span class="level">Advanced</span>
                 </div>
                 <div class="progress-bar">
                     <div class="progress cpp"></div>
@@ -108,7 +112,7 @@
             <div class="glass-card skill-card">
                 <div class="skill-header">
                     <h3>SystemVerilog</h3>
-                    <span class="skill-level">Advanced</span>
+                    <span class="level">Advanced</span>
                 </div>
                 <div class="progress-bar">
                     <div class="progress verilog"></div>
@@ -116,50 +120,62 @@
             </div>
         </div>
 
+        <h3 class="subsection-title gradient-text">Languages</h3>
         <div class="languages-grid">
             <div class="glass-card language-card">
                 <i class="fas fa-globe"></i>
-                <h3>French</h3>
+                <h4>French</h4>
                 <p>Native</p>
             </div>
             <div class="glass-card language-card">
                 <i class="fas fa-globe"></i>
-                <h3>English</h3>
+                <h4>English</h4>
                 <p>Fluent</p>
             </div>
             <div class="glass-card language-card">
                 <i class="fas fa-globe"></i>
-                <h3>Russian</h3>
+                <h4>Russian</h4>
                 <p>Basic</p>
             </div>
             <div class="glass-card language-card">
                 <i class="fas fa-globe"></i>
-                <h3>Spanish</h3>
+                <h4>Spanish</h4>
                 <p>Basic</p>
             </div>
         </div>
     </section>
 
+    <!-- Section Education -->
     <section id="education" class="education">
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title gradient-text">Education</h2>
         <div class="education-grid">
             <div class="glass-card education-card">
                 <h3>Ecole Nationale Supérieure des Mines de Saint-Étienne</h3>
-                <span class="date">2023 - 2026</span>
+                <p class="period">2023 - 2026</p>
                 <p class="degree">Engineering Master Degree</p>
-                <div class="achievement">
-                    <span class="badge">Ranked 3rd - 3.94 GPA</span>
-                </div>
+                <div class="badge">Ranked 3rd - 3.94 GPA</div>
             </div>
             <div class="glass-card education-card">
                 <h3>Lycée Henri IV</h3>
-                <span class="date">2020 - 2023</span>
+                <p class="period">2020 - 2023</p>
                 <p class="degree">Preparatory Class MPSI/MP</p>
-                <div class="achievement">
-                    <span class="badge">Top 3 Preparatory Classes</span>
-                </div>
+                <div class="badge">Top 3 Preparatory Classes</div>
             </div>
         </div>
     </section>
+
+    <script>
+        // Simple scroll animation
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            document.querySelector('.hero-gradient').style.transform = `translateY(${scrolled * 0.5}px)`;
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.floating-nav').classList.toggle('show-mobile');
+        });
+    </script>
 </body>
 </html>
