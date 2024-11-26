@@ -3,50 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Rose Cymbler</title>
+    <title>Rose Cymbler - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>[Rose Cymbler]</h1>
-        <p>Engineer | Passionate about Computer Science</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#experience">Expérience</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>Student in Engineering with a major in Mathematics and Computer Sciences. I have an international background and have lived 11 years outside of my native country(Ukraine, Caribbean, Belgium) - Passionate about how Technology can contribute to transform the world and the business.</p>
-        </section>
-        <section id="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>[Poste 1]</strong> chez [Entreprise] (Dates) - [Résumé des responsabilités]</li>
-                <li><strong>[Poste 2]</strong> chez [Entreprise] (Dates) - [Résumé des responsabilités]</li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">RC</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>[Nom du projet]</h3>
-                <p>[Description du projet]</p>
-                <a href="[Lien vers le projet]" target="_blank">Voir le projet</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email : <a href="mailto:tonemail@example.com">tonemail@example.com</a></p>
-            <p>LinkedIn : <a href="https://linkedin.com/in/tonlinkedin" target="_blank">linkedin.com/in/tonlinkedin</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 [Ton Nom]. Tous droits réservés.</p>
-    </footer>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Rose Cymbler</h1>
+            <p class="subtitle">Engineering Student & Data Enthusiast</p>
+            <div class="social-links">
+                <a href="mailto:rose.cymbler@icloud.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/rose-cymbler-08a282294"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/rosecymbler"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Éducation</h2>
+        <div class="education-cards">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Ecole Nationale Supérieure des Mines de Saint-Étienne</h3>
+                    <p class="period">2023 - 2026</p>
+                    <p class="description">Engineering Master Degree</p>
+                    <div class="badge">Ranked 3rd - 3.94 GPA</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Lycée Henri IV</h3>
+                    <p class="period">2020 - 2023</p>
+                    <p class="description">Preparatory Class MPSI/MP</p>
+                    <div class="badge">Top 3 Classes Préparatoires</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2>Expérience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>BayBridge Digital</h3>
+                    <p class="period">Janvier 2024</p>
+                    <p class="role">Data Strategy & Analytics Intern</p>
+                    <ul>
+                        <li>Organisation de sessions "Lunch & Learn" sur la Data Cloud</li>
+                        <li>Développement d'offres commerciales personnalisées</li>
+                        <li>Collaboration avec les équipes techniques et marketing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Moadon Association</h3>
+                    <p class="period">Été 2024</p>
+                    <p class="role">Summer Camp Management</p>
+                    <ul>
+                        <li>Gestion des opérations pour 200+ participants</li>
+                        <li>Réduction des coûts opérationnels de 10%</li>
+                        <li>Management d'une équipe technique de 15 personnes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Compétences</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Compétences Techniques</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>Advanced</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL</span>
+                            <span>Advanced</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>C/C++</span>
+                            <span>Advanced</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Langues</h3>
+                <div class="language-grid">
+                    <div class="language-item">
+                        <i class="fas fa-globe"></i>
+                        <h4>Français</h4>
+                        <p>Natif</p>
+                    </div>
+                    <div class="language-item">
+                        <i class="fas fa-globe"></i>
+                        <h4>Anglais</h4>
+                        <p>Fluent</p>
+                    </div>
+                    <div class="language-item">
+                        <i class="fas fa-globe"></i>
+                        <h4>Russe</h4>
+                        <p>Basic</p>
+                    </div>
+                    <div class="language-item">
+                        <i class="fas fa-globe"></i>
+                        <h4>Espagnol</h4>
+                        <p>Basic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="mailto:rose.cymbler@icloud.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>rose.cymbler@icloud.com</span>
+                </a>
+                <a href="https://linkedin.com/in/rose-cymbler-08a282294" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/rosecymbler" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
