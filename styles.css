@@ -228,7 +228,7 @@ section {
 .progress.cpp { width: 90%; background: linear-gradient(90deg, #2563eb, #3b82f6); }
 .progress.verilog { width: 80%; background: linear-gradient(90deg, #6366f1, #818cf8); }
 .progress.matlab { width: 50%; background: linear-gradient(90deg, #4f46e5, #7c3aed); }
-.progress.stm { width: 50%; background: linear-gradient(90deg, #4f46e5, #7c3aed); }
+.progress.stm { width: 75%; background: linear-gradient(90deg, #4f46e5, #7c3aed); }
 
 /* Languages Grid */
 .languages-grid {
