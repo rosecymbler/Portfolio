@@ -255,6 +255,14 @@ processes for better efficiency.</li>
             this.classList.toggle('active');
             document.querySelector('.floating-nav').classList.toggle('show-mobile');
         });
+
+        // Activer les jauges dès que la page se charge
+        document.addEventListener("DOMContentLoaded", () => {
+            const progressBars = document.querySelectorAll(".progress");
+            progressBars.forEach((bar) => {
+                bar.classList.add("animate");
+            });
+        });
     </script>
 </body>
 </html>
